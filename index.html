@@ -1,531 +1,487 @@
-
-<!-- saved from url=(0108)https://ed1customsuz-kappa.vercel.app/PersonCabinet/template/print_decl/print_decl.jsp?id=1967014fcca_1_ugtd -->
-<html class="chrome"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link href="https://ed1.customs.uz/PersonCabinet/main_img/emblem_cs.png" rel="icon">
-    <script type="text/javascript" async="" src="./БЮДни юклаб олиш_files/js"></script><script async="" src="./БЮДни юклаб олиш_files/analytics.js.Без названия"></script><script type="text/javascript" async="" src="./БЮДни юклаб олиш_files/js(1)"></script>
-    <script async="" src="./БЮДни юклаб олиш_files/analytics(1).js.Без названия"></script>
-    <script src="./БЮДни юклаб олиш_files/jquery-1.7.2.js.Без названия"></script>
-
-
-    <script src="./БЮДни юклаб олиш_files/libscripts.bundle.js.Без названия"></script>
-    <script src="./БЮДни юклаб олиш_files/vendorscripts.bundle.js.Без названия"></script>
-    <script src="./БЮДни юклаб олиш_files/aos.js.Без названия"></script>
-    <script src="./БЮДни юклаб олиш_files/mainscripts.bundle.js.Без названия"></script>
-
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="./БЮДни юклаб олиш_files/bootstrap.min.css">
-    <link href="./БЮДни юклаб олиш_files/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./БЮДни юклаб олиш_files/main.css">
-    <link rel="stylesheet" href="./БЮДни юклаб олиш_files/all-themes.css">
-    <link href="./БЮДни юклаб олиш_files/style.css" rel="stylesheet">
-    <link href="./БЮДни юклаб олиш_files/ionicons.min.css" rel="stylesheet">
-    <link href="./БЮДни юклаб олиш_files/font-awesome.min.css" rel="stylesheet">
-
-
-    <link href="./БЮДни юклаб олиш_files/owl.carousel.min.css" rel="stylesheet">
-
-    <title>БЮДни юклаб олиш</title>
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+    <title>Toshkent bog‘-parklari so‘rovnomasi | Green City Survey</title>
+    <!-- Tailwind CSS v3 + Font Awesome 6 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        #body_bqb {
-            background: url("./БЮДни юклаб олиш_files/backprint.png");
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            /*background-size: auto;*/
-            background-size: cover;
-            background-repeat: no-repeat;
+        body { background: linear-gradient(145deg, #f0fdf4 0%, #f9fafb 100%); }
+        .survey-card-scroll { scrollbar-width: thin; scrollbar-color: #10b981 #e2e8f0; }
+        .survey-card-scroll::-webkit-scrollbar { width: 5px; }
+        .survey-card-scroll::-webkit-scrollbar-track { background: #e2e8f0; border-radius: 10px; }
+        .survey-card-scroll::-webkit-scrollbar-thumb { background: #10b981; border-radius: 10px; }
+        .option-card { transition: all 0.2s ease; }
+        .option-card:hover { background-color: #ecfdf5; border-color: #6ee7b7; transform: translateX(2px); }
+        .btn-hover { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        .btn-hover:active { transform: scale(0.96); }
+        .progress-fill { transition: width 0.3s ease-out; }
+        .matrix-table th, .matrix-table td { padding: 12px 6px; vertical-align: middle; }
+        @media (max-width: 640px) {
+            .matrix-table th, .matrix-table td { padding: 8px 4px; font-size: 0.75rem; }
         }
-
-        #testimonials {
-            background: url("/333.jpg");
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            /*background-size: auto;*/
-            background-size: cover;
-            background-repeat: no-repeat;
+        .success-bounce { animation: bounceSoft 0.6s cubic-bezier(0.34, 1.2, 0.64, 1); }
+        @keyframes bounceSoft {
+            0% { transform: scale(0.7); opacity: 0; }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .toast-message { animation: slideUp 0.25s ease-out; }
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
+<body class="font-sans antialiased">
+    <div class="max-w-3xl mx-auto px-4 py-6 md:py-10">
+        <!-- header -->
+        <div class="text-center mb-8">
+            <div class="inline-flex items-center justify-center bg-emerald-100 p-3 rounded-full mb-3 shadow-sm">
+                <i class="fas fa-tree text-emerald-700 text-2xl"></i>
+            </div>
+            <h1 class="text-2xl md:text-3xl font-extrabold text-emerald-800 tracking-tight">Toshkent shahri bog‘-parklari so‘rovnomasi</h1>
+            <p class="text-gray-600 mt-2 text-sm md:text-base max-w-lg mx-auto">
+                <i class="fas fa-leaf text-emerald-500 mr-1"></i> Sizning fikringiz shahar yashil hududlarini rivojlantirish uchun muhim
+            </p>
+        </div>
 
-
-<body id="body_bqb" style="width: 50%;" align="center" data-aos-easing="ease-in-out-sine" data-aos-duration="400" data-aos-delay="0" class="ls-closed">
-
-    <form name="PC_ted" target="PCfonlar" method="post" align="center">
-        <section class="content" style="width: 50%;  margin: 0 0 0 0;" align="center">
-            <div class="container-fluid">
-                <div class="row">
-
-                    <div class="col-md-12">
-
-                        <div class="body" id="result_SK">
-
-                            <table style="width: 100%;" border="0">
-
-                                <tbody>
-                                    <tr>
-                                        <td style="width: 100%; vertical-align: top" colspan="2">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="100" data-aos-delay="100" style="background: #009400; border-radius: 5px; border-color: #3050cd" align="center">
-                                                    <table border="0" style="width: 100%;">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>&nbsp;</td>
-                                                                <td style="width: 99%" align="center">
-                                                                    <table border="0">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td style="width: 25%" align="right">
-                                                                                    <img src="./БЮДни юклаб олиш_files/Logo-tamozhni.png" alt="user" style="width: 100%; margin-top: 0" class="rounded-circle">
-
-                                                                                </td>
-                                                                                <td>
-                                                                                    <div class="form-group">
-                                                                                        <div class="form-line" style="margin-left: 10px;">
-                                                                                            <a href="https://ed1.customs.uz/PersonCabinet/template/print_decl/print_decl.jsp?id=1967014fcca_1_ugtd#">
-                                                                                                <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:100%; color: #ffffff ">
-                                                                                                    ЎЗБЕКИСТОН
-                                                                                                    РЕСПУБЛИКАСИ<br>
-                                                                                                    ДАВЛАТ БОЖХОНА
-                                                                                                    ҚЎМИТАСИ
-                                                                                                </font>
-                                                                                            </a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                                <td>&nbsp;</td>
-
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-
-
-                                    <tr>
-                                        <td style="width: 100%; vertical-align: top" colspan="2">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="100" data-aos-delay="100" style="background: #009400; border-radius: 5px; border-color: #3050cd" align="center">
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:100%; color: #ffffff ">
-                                                        БОЖХОНА ЮК ДЕКЛАРАЦИЯСИ</font>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-
-
-                                    <tr>
-                                        <td style="width: 50%; vertical-align: top">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="200" data-aos-delay="100" style="background: #3050cd; border-radius: 5px; border-color: #3050cd" align="right">
-                                                    <div style="margin-bottom: -5px; margin-top: -5px">
-                                                        <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #ffffff">
-                                                            БЮДнинг рўйхат рақами:</font>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="200" data-aos-delay="100" style="border-radius: 5px; border-color: #3050cd">
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #0d10a3">
-                                                        <b>26010/29.08.2025/0041533 </b>
-                                                    </font>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 50%; vertical-align: top">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="400" data-aos-delay="100" style="background: #3050cd; border-radius: 5px; border-color: #3050cd" align="right">
-                                                    <div style="margin-bottom: -5px; margin-top: -5px">
-                                                        <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #ffffff">
-                                                            БЮД рўйхатга олинган вақт:</font>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="400" data-aos-delay="100" style="border-radius: 5px; border-color: #3050cd">
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #0d10a3">
-                                                        29.08.2025 11:59:57</font>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 50%; vertical-align: top">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="600" data-aos-delay="100" style="background: #3050cd; border-radius: 5px; border-color: #3050cd;" align="right">
-                                                    <div style="margin-bottom: -5px; margin-top: -5px">
-                                                        <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #ffffff;">
-                                                            Расмийлаштирилган вақт:</font>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="600" data-aos-delay="100" style="border-radius: 5px; border-color: #3050cd">
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #0d10a3">
-                                                        29.08.2025 16:38:33</font>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 50%; vertical-align: top">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="800" data-aos-delay="100" style="background: #3050cd; border-radius: 5px; border-color: #3050cd" align="right">
-                                                    <div style="margin-bottom: -5px; margin-top: -5px">
-                                                        <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #ffffff">
-                                                            Расмийлаштирув ҳолати:</font>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="800" data-aos-delay="100" style="border-radius: 5px; border-color: #3050cd">
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #0d10a3">
-                                                        Расмийлаштирилган
-                                                    </font>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 50%; vertical-align: top">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="800" data-aos-delay="100" style="background: #3050cd; border-radius: 5px; border-color: #3050cd" align="right">
-
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #ffffff">
-                                                        БЮД йўлаги:</font>
-
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="800" data-aos-delay="100" style="border-radius: 5px; border-color: #3050cd">
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #bd4913">
-                                                        <b>Қизил</b>
-                                                    </font>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 50%; vertical-align: top">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="1000" data-aos-delay="100" style="background: #3050cd; border-radius: 5px; border-color: #3050cd" align="right">
-
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #ffffff">
-                                                        Божхона режими:</font>
-
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="1000" data-aos-delay="100" style="border-radius: 5px; border-color: #3050cd">
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #0d10a3">
-                                                        НД 40</font>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 50%; vertical-align: top">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="1200" data-aos-delay="100" style="background: #3050cd; border-radius: 5px; border-color: #3050cd" align="right">
-
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #ffffff">
-                                                        Юк жўнатувчи давлат:</font>
-
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="1200" data-aos-delay="100" style="border-radius: 5px; border-color: #3050cd">
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #0d10a3">
-                                                        156 - КИТАЙ</font>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 50%; vertical-align: top">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="1400" data-aos-delay="100" style="background: #3050cd; border-radius: 5px; border-color: #3050cd" align="right">
-
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #ffffff">
-                                                        Юк келиб тушадиган давлат:</font>
-
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="1400" data-aos-delay="100" style="border-radius: 5px; border-color: #3050cd">
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #0d10a3">
-                                                        - </font>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 50%; vertical-align: top">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="1600" data-aos-delay="100" style="background: #3050cd; border-radius: 5px; border-color: #3050cd" align="right">
-                                                    <div style="margin-bottom: -5px; margin-top: -5px">
-                                                        <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #ffffff">
-                                                            Чегарадаги божхона пости:</font>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="1600" data-aos-delay="100" style="border-radius: 5px; border-color: #3050cd">
-                                                    <div style="margin-bottom: -5px; margin-top: -5px">
-                                                        <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #0d10a3">
-                                                            03002 - "Дустлик" ЧП</font>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 50%; vertical-align: top">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="1800" data-aos-delay="100" style="background: #3050cd; border-radius: 5px; border-color: #3050cd" align="right">
-                                                    <div style="margin-bottom: -5px; margin-top: -5px">
-                                                        <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #ffffff">
-                                                            Транспорт воситаси тури:</font>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="1800" data-aos-delay="100" style="border-radius: 5px; border-color: #3050cd">
-                                                    <div style="margin-bottom: -5px; margin-top: -5px">
-                                                        <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #0d10a3">
-                                                            90 - Товар сифатида ўзи ҳаракатланувчи транспорт воситаси</font>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 50%; vertical-align: top">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="1800" data-aos-delay="100" style="background: #3050cd; border-radius: 5px; border-color: #3050cd" align="right">
-                                                    <div style="margin-bottom: -5px; margin-top: -5px">
-                                                        <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #ffffff">
-                                                            Товар тўғрисидаги маълумотлар:</font>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="1800" data-aos-delay="100" style="border-radius: 5px; border-color: #3050cd">
-
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #0d10a3">
-                                                        <div id="cnt_com">Товар сони: 1 та</div>
-                                                    </font>
-
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td style="width: 100%; vertical-align: top" colspan="2">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="1800" data-aos-delay="100" style="/*background: #3050cd;*/ border-radius: 5px; border-color: #3050cd" align="right">
-                                                    <div style="margin-bottom: -5px; margin-top: -5px; width: 100%">
-                                                        <div style="overflow: auto; width: 370px;">
-                                                            <table style="width: 100%; font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #0d10a3" border="1">
-                                                                <tbody>
-                                                                    <tr style="background: #d5f3ff">
-                                                                        <td align="center">№</td>
-                                                                        <td align="center">ТИФ ТН коди</td>
-                                                                        <td align="center">Товар номи</td>
-                                                                        <td align="center">Нетто оғирлиги</td>
-                                                                        <td align="center">Брутто оғирлиги</td>
-                                                                    </tr>
-
-                                                                    <tr>
-                                                                        <td align="center">1</td>
-                                                                        <td align="center">8703800009</td>
-                                                                        <td align="center"><textarea style="width: 200px; font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #0d10a3">1. Новый легковой автомобиль приводимый в движение только электрическим двигателем марки: BYD HAN L 701KM, Модел:BYD7002ACBEV5, Модель двигателя: TZ210XYR, № кузова:LGXCH6CD4S0567924, № шасси: LGXCH6CD4S0567924, № двиг.: 6W5022548, об. дв. 0см3, цвет Темно-серый металлик,  электрический, 2025г.в. - кол. 1 шт, вес: 2283 кг
-2. мест 1, 1 без упаковка
-8. 000
-11. 02
-Общее кол. мест: 1</textarea></td>
-                                                                        <td align="center">2 283,000</td>
-                                                                        <td align="center">2 883,000</td>
-                                                                    </tr>
-
-                                                                    <script>$('#cnt_com').html('Товар сони: 1 та')</script>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td style="width: 50%; vertical-align: top">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="2000" data-aos-delay="100" style="background: #3050cd; border-radius: 5px; border-color: #3050cd" align="right">
-                                                    <div style="margin-bottom: -5px; margin-top: -5px">
-                                                        <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #ffffff">
-                                                            Товарнинг умумий нетто оғирлиги:</font>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="2000" data-aos-delay="100" style="border-radius: 5px; border-color: #3050cd">
-
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #0d10a3">
-                                                        2 283,000 кг.</font>
-
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td style="width: 50%; vertical-align: top">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="2000" data-aos-delay="100" style="background: #3050cd; border-radius: 5px; border-color: #3050cd" align="right">
-                                                    <div style="margin-bottom: -5px; margin-top: -5px">
-                                                        <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #ffffff">
-                                                            Товарнинг умумий брутто оғирлиги:</font>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="2000" data-aos-delay="100" style="border-radius: 5px; border-color: #3050cd">
-
-                                                    <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size:90%; color: #0d10a3">
-                                                        2 283,000 кг.</font>
-
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 100%; vertical-align: top" colspan="2">
-                                            <ul class="search-results">
-                                                <li class="result-list aos-item" data-aos-duration="2000" data-aos-delay="100" style="background: #009400; border-radius: 5px; border-color: #3050cd" align="center">
-                                                    <table border="0" style="margin-top: -5px; margin-bottom: -5px; width: 100%">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>&nbsp;</td>
-                                                                <td style="width: 99%" align="center">
-
-
-                                                                    <img src="./БЮДни юклаб олиш_files/pdf_1850.png" alt="user" style="width: 30px">&nbsp;&nbsp;
-                                                                    <a download="" href="https://ed1-customs-uzz.vercel.app/БЮДни юклаб олиш_files/198415c5572_1_ugtd.zip">
-                                                                        <font style="font-family: &#39;Material-Design-Iconic-Font&#39;, serif; font-size: 100%; color: #ffffff">
-                                                                            Электрон БЮДни юклаб олиш
-                                                                        </font>
-                                                                    </a>
-
-
-
-
-                                                                </td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-
-                        </div>
-
-
-
-                    </div>
-
-
+        <!-- progress bar -->
+        <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-md p-4 md:p-5 mb-6 border border-emerald-100">
+            <div class="flex justify-between items-center text-sm font-medium text-gray-700 mb-2">
+                <div class="flex items-center gap-2 bg-emerald-50 px-3 py-1.5 rounded-full">
+                    <i class="fas fa-clipboard-list text-emerald-600 text-xs"></i>
+                    <span id="currentStepLabel" class="text-emerald-800 font-bold">1 / 16</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-chart-simple text-emerald-500"></i>
+                    <span id="percentLabel" class="text-emerald-700 font-semibold">6%</span>
                 </div>
             </div>
-        </section>
-    </form>
+            <div class="w-full bg-gray-100 rounded-full h-3 overflow-hidden shadow-inner">
+                <div id="progressFill" class="bg-gradient-to-r from-emerald-500 to-emerald-600 h-3 rounded-full progress-fill" style="width: 6%"></div>
+            </div>
+        </div>
 
-    <!-- Jquery Core Js -->
-    <script type="text/javascript">
-        AOS.init({
-            easing: 'ease-in-out-sine'
-        });
-    </script>
+        <!-- survey card -->
+        <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden transition-all">
+            <div id="surveyContent" class="p-5 md:p-7 survey-card-scroll max-h-[65vh] md:max-h-[70vh] overflow-y-auto"></div>
+            <div class="bg-gray-50/90 px-5 py-4 md:px-7 flex justify-between gap-3 border-t border-gray-200">
+                <button id="prevBtn" class="bg-white border border-gray-300 hover:border-emerald-400 text-gray-700 font-semibold py-2.5 px-5 rounded-xl transition-all shadow-sm hover:shadow flex items-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed">
+                    <i class="fas fa-arrow-left text-sm"></i> Orqaga
+                </button>
+                <button id="nextBtn" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2.5 px-6 rounded-xl transition-all shadow-md hover:shadow-lg flex items-center gap-2 btn-hover">
+                    <span id="nextBtnText">Keyingi</span>
+                    <i id="nextIcon" class="fas fa-arrow-right text-sm"></i>
+                </button>
+            </div>
+        </div>
 
+        <div class="text-center text-gray-400 text-xs mt-8 flex justify-center gap-3">
+            <span><i class="far fa-clock mr-1"></i> 5 daqiqa</span>
+            <span><i class="fas fa-lock-alt"></i> Maxfiylik kafolatlangan</span>
+        </div>
+    </div>
 
-    <script type="text/javascript">
-        function entered1(url, windowname) {
-            $('input#URL').val(url);
-            PC_ted.action = '/PersonCabinet/WellCome';
-            PC_ted.target = windowname;
-            PC_ted.submit();
-        }
-        function showProekt(filename, windowname) {
-            //    alert(filename);
-            var INN = $('input#INN').val();
-            if (INN == null || INN == "") {
-                entered1(filename, windowname);
+    <script>
+        // ======================== GOOGLE APPS SCRIPT URL =========================
+        // 👇 Replace with your Google Apps Script Web App URL after deployment
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyD5cExGh8YbCYAxZipLX9Ck13YE_HbcysXdWorphtQn44tetbi6v80BhRSN2JT772j/exec';
+        
+        // ----------------------------- QUESTION LIST -----------------------------
+        const QUESTIONS = [
+            { id: "age", type: "radio", text: "Yoshingiz qaysi guruhga kiradi?", options: ["15–25 yosh", "26–40 yosh", "41–60 yosh", "61 yosh va undan yuqori"], required: true },
+            { id: "district", type: "radio", text: "Yashash tumaningiz?", options: ["Chilonzor", "Yunusobod", "Mirzo Ulug'bek", "Shayxontohur", "Yakkasaroy", "Uchtepa", "Sergeli", "Olmazor", "Bektemir", "Boshqa"], required: true },
+            { id: "visitFrequency", type: "radio", text: "Toshkentdagi bog'-parklarga qanchalik tez-tez borasiz?", options: ["Har kuni", "Haftada 2–3 marta", "Haftada bir marta", "Oyda bir-ikki marta", "Kamdan-kam yoki umuman bormayman"], required: true },
+            { id: "purpose", type: "checkbox", text: "Bog'-parkka borishdan asosiy maqsadingiz nima?", options: ["Piyoda yurish va jismoniy faollik", "Bolalar bilan dam olish", "Tabiatda hordiq chiqarish", "Sport va jismoniy mashq", "Do'stlar bilan muloqot", "Tabiiy muhitni tomosha qilish"], required: true, minSelect: 1 },
+            { id: "distance", type: "radio", text: "Yashash joyingizdan eng yaqin bog'-park qancha masofada?", options: ["500 m gacha", "500 m – 1 km", "1–3 km", "3 km dan uzoqda"], required: true },
+            { id: "targetGroups", type: "checkbox", text: "Bog'-parklar aholining qaysi qatlamiga mo'ljallangan?", options: ["Bolalar", "Yoshlar", "O'smirlar", "Yosh bolali oilalar", "Katta yoshdagi insonlar", "Keksalar"], required: true, minSelect: 1 },
+            { id: "walkways", type: "radio", text: "Bog‘-parklardagi yo‘laklar va piyoda hududlari holati?", options: ["Juda yaxshi", "Yaxshi", "O'rtacha", "Qoniqarsiz", "Juda qoniqarsiz"], required: true },
+            { id: "toilets", type: "radio", text: "Sanitariya tugunlari (hojatxonalar) haqida fikringiz?", options: ["Qulay va toza", "Bor, lekin holati qoniqarsiz", "Juda kam joylashtirilgan", "Umuman yo'q"], required: true },
+            { id: "infrastructure", type: "matrix", text: "Quyidagi infratuzilmalarni baholang (har bir qator uchun)", rows: ["Yoritish tizimi", "Sanitar tugunlar", "Bolalar o'yin maydoni", "Sport maydonchalari", "Kafe", "Chiqindi qutilari"], columns: ["Yaxshi", "O'rtacha", "Qoniqarsiz", "Yo'q"], required: true },
+            { id: "shade", type: "radio", text: "Daraxt va o'simliklar yetarli soya beradimi?", options: ["Ha", "Qisman", "Yo'q", "E'tibor bermaganman"], required: true },
+            { id: "cleanliness", type: "radio", text: "Bog'-parkdagi tozalik holatini baholang", options: ["Doim toza", "Ko'pincha toza", "Tez-tez ifloslangan", "Doimiy muammo"], required: true },
+            { id: "missingFacilities", type: "checkbox", text: "Qaysi xizmatlar va imkoniyatlar yetishmaydi? (bir nechtasini tanlang)", options: ["Zamonaviy o'yin maydonchalari", "Skameykalar va dam olish zonalari", "Yugurish yo'laklari", "Veloyo'llar", "Kafeteryalar", "To'xtab turish joyi", "Wi-Fi zonalari", "Hojatxonalar", "Favvoralar"], required: true, minSelect: 1 },
+            { id: "nationalTraditions", type: "radio", text: "Bog‘-parklarda milliy an’ana va madaniy elementlarning aks etishi siz uchun qanchalik muhim?", options: ["Juda muhim", "Muhim", "Zamonaviy elementlar bilan", "Ahamiyat bermayman"], required: true },
+            { id: "optimalDistance", type: "radio", text: "Siz uchun eng maqbul piyoda borish masofasi qancha?", options: ["300 m", "500 m", "1 km", "Muhimi sifati"], required: true },
+            { id: "futurePriority", type: "checkbox", text: "Kelajakda parklarni rivojlantirishda qaysi ikki yo‘nalish eng muhim? (FAQAT 2 TA TANLANG)", options: ["Ko'proq daraxtlar va yashil hududlar", "Zamonaviy bolalar maydonchalari", "Sport inshootlari va maydonchalar", "Yoritish tizimini yaxshilash", "Chiqindi tizimi va tozalik", "Kafe va dam olish hududlari"], required: true, minSelect: 1, maxSelect: 2 },
+            { id: "suggestion", type: "textarea", text: "Taklif va mulohazalaringiz (ixtiyoriy)", placeholder: "Bog‘-parklarni yaxshilash bo‘yicha fikrlaringizni yozing...", required: false }
+        ];
+
+        // ---------- GLOBAL STATE ----------
+        let answers = {
+            age: "", district: "", visitFrequency: "", purpose: [], distance: "", targetGroups: [],
+            walkways: "", toilets: "", infrastructure: { lighting: "", sanitary: "", playground: "", sports: "", cafe: "", trash: "" },
+            shade: "", cleanliness: "", missingFacilities: [], nationalTraditions: "", optimalDistance: "", futurePriority: [], suggestion: ""
+        };
+        
+        let currentIndex = 0;
+        const totalQuestions = QUESTIONS.length;
+        
+        // DOM elements
+        const surveyContainer = document.getElementById("surveyContent");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const nextBtnText = document.getElementById("nextBtnText");
+        const nextIcon = document.getElementById("nextIcon");
+        const currentStepLabel = document.getElementById("currentStepLabel");
+        const percentLabel = document.getElementById("percentLabel");
+        const progressFill = document.getElementById("progressFill");
+        
+        // Update progress bar and button text
+        function updateProgressUI() {
+            const step = currentIndex + 1;
+            const percent = Math.round((step / totalQuestions) * 100);
+            currentStepLabel.innerText = `${step} / ${totalQuestions}`;
+            percentLabel.innerText = `${percent}%`;
+            progressFill.style.width = `${percent}%`;
+            
+            if (currentIndex === totalQuestions - 1) {
+                nextBtnText.innerText = "Yakunlash";
+                nextIcon.className = "fas fa-check-circle text-sm";
             } else {
-                PC_ted.action = filename;
-                PC_ted.target = windowname;
-                PC_ted.submit();
+                nextBtnText.innerText = "Keyingi";
+                nextIcon.className = "fas fa-arrow-right text-sm";
+            }
+            prevBtn.disabled = (currentIndex === 0);
+        }
+        
+        // Capture answers from DOM
+        function captureCurrentAnswers() {
+            const q = QUESTIONS[currentIndex];
+            if (!q) return;
+            if (q.type === "radio") {
+                const selected = document.querySelector(`input[name="q_${q.id}"]:checked`);
+                if (selected) answers[q.id] = selected.value;
+            } else if (q.type === "checkbox") {
+                const checked = document.querySelectorAll(`input[name="q_${q.id}"]:checked`);
+                answers[q.id] = Array.from(checked).map(cb => cb.value);
+            } else if (q.type === "textarea") {
+                const ta = document.getElementById(`textarea_${q.id}`);
+                if (ta) answers[q.id] = ta.value;
+            } else if (q.type === "matrix") {
+                const infraKeys = ["lighting", "sanitary", "playground", "sports", "cafe", "trash"];
+                const rowsCount = q.rows.length;
+                let newInfra = { ...answers.infrastructure };
+                for (let i = 0; i < rowsCount; i++) {
+                    const selected = document.querySelector(`input[name="matrix_${i}"]:checked`);
+                    if (selected) {
+                        newInfra[infraKeys[i]] = selected.value;
+                    }
+                }
+                answers.infrastructure = newInfra;
             }
         }
+        
+        // Validation
+        function validateCurrent() {
+            const q = QUESTIONS[currentIndex];
+            if (!q) return true;
+            
+            if (q.type === "radio") {
+                const selected = document.querySelector(`input[name="q_${q.id}"]:checked`);
+                if (!selected && q.required) {
+                    showToast("Iltimos, variantlardan birini tanlang", "error");
+                    return false;
+                }
+                return true;
+            } 
+            else if (q.type === "checkbox") {
+                const checked = document.querySelectorAll(`input[name="q_${q.id}"]:checked`);
+                const count = checked.length;
+                if (q.required && count === 0) {
+                    showToast("Kamida bitta variantni tanlang", "error");
+                    return false;
+                }
+                if (q.maxSelect && count > q.maxSelect) {
+                    showToast(`Faqat ${q.maxSelect} tagacha variant tanlash mumkin`, "error");
+                    return false;
+                }
+                return true;
+            }
+            else if (q.type === "matrix") {
+                const rowsCount = q.rows.length;
+                let allSelected = true;
+                for (let i = 0; i < rowsCount; i++) {
+                    const selected = document.querySelector(`input[name="matrix_${i}"]:checked`);
+                    if (!selected) { allSelected = false; break; }
+                }
+                if (!allSelected && q.required) {
+                    showToast("Iltimos, barcha infratuzilma qatorlarini baholang", "error");
+                    return false;
+                }
+                return true;
+            }
+            return true;
+        }
+        
+        // Toast notification
+        function showToast(msg, type = "error") {
+            let toast = document.getElementById("globalToast");
+            if (!toast) {
+                toast = document.createElement("div");
+                toast.id = "globalToast";
+                toast.className = "fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-5 py-3 rounded-xl shadow-xl z-50 flex items-center gap-2 text-sm font-medium transition-all duration-300 opacity-0";
+                document.body.appendChild(toast);
+            }
+            const icon = type === "error" ? '<i class="fas fa-exclamation-triangle text-amber-400 mr-1"></i>' : '<i class="fas fa-info-circle text-emerald-400 mr-1"></i>';
+            toast.innerHTML = `${icon} ${msg}`;
+            toast.classList.remove("opacity-0");
+            toast.classList.add("opacity-100", "toast-message");
+            setTimeout(() => {
+                toast.classList.remove("opacity-100");
+                toast.classList.add("opacity-0");
+            }, 2600);
+        }
+        
+        // Render current question
+        function renderQuestion() {
+            const q = QUESTIONS[currentIndex];
+            if (!q) return;
+            let html = `<div class="space-y-5">`;
+            html += `<h3 class="text-xl md:text-2xl font-bold text-gray-800 border-l-4 border-emerald-500 pl-3 flex items-center gap-2"><i class="fas fa-question-circle text-emerald-400 text-lg"></i> ${escapeHtml(q.text)}</h3>`;
+            
+            if (q.type === "radio") {
+                html += `<div class="radio-group space-y-3 mt-4">`;
+                q.options.forEach(opt => {
+                    const checked = (answers[q.id] === opt) ? 'checked' : '';
+                    html += `<label class="flex items-center gap-3 p-3 rounded-xl border border-gray-200 option-card cursor-pointer">
+                                <input type="radio" name="q_${q.id}" value="${escapeHtml(opt)}" class="w-5 h-5 text-emerald-600 focus:ring-emerald-500" ${checked}>
+                                <span class="text-gray-700">${escapeHtml(opt)}</span>
+                                <i class="fas fa-check-circle text-emerald-500 ml-auto opacity-0 transition-opacity ${checked ? 'opacity-100' : ''} radio-check-icon"></i>
+                            </label>`;
+                });
+                html += `</div>`;
+            } 
+            else if (q.type === "checkbox") {
+                const selectedVals = answers[q.id] || [];
+                html += `<div class="checkbox-group space-y-3 mt-4">`;
+                q.options.forEach(opt => {
+                    const isChecked = selectedVals.includes(opt);
+                    html += `<label class="flex items-center gap-3 p-3 rounded-xl border border-gray-200 option-card cursor-pointer">
+                                <input type="checkbox" name="q_${q.id}" value="${escapeHtml(opt)}" class="w-5 h-5 text-emerald-600 rounded focus:ring-emerald-500" ${isChecked ? 'checked' : ''}>
+                                <span class="text-gray-700">${escapeHtml(opt)}</span>
+                            </label>`;
+                });
+                if (q.maxSelect) html += `<p class="text-xs text-amber-600 mt-2 flex items-center gap-1"><i class="fas fa-info-circle"></i> Ko‘pi bilan ${q.maxSelect} ta variant tanlang</p>`;
+                html += `</div>`;
+            }
+            else if (q.type === "matrix") {
+                const rows = q.rows;
+                const cols = q.columns;
+                const infra = answers.infrastructure;
+                const keyMap = ["lighting", "sanitary", "playground", "sports", "cafe", "trash"];
+                html += `<div class="overflow-x-auto mt-4 rounded-xl border border-gray-200"><table class="matrix-table min-w-full bg-white text-sm">`;
+                html += `<thead class="bg-gray-100"><tr><th class="p-2 text-left font-semibold">Infratuzilma</th>`;
+                cols.forEach(col => html += `<th class="p-2 text-center font-semibold">${escapeHtml(col)}</th>`);
+                html += `</tr></thead><tbody>`;
+                for (let i = 0; i < rows.length; i++) {
+                    const rowName = rows[i];
+                    const currentVal = infra[keyMap[i]] || "";
+                    html += `<tr class="border-b border-gray-100 hover:bg-emerald-50/40 transition"><td class="p-2 font-medium">${escapeHtml(rowName)}</td>`;
+                    cols.forEach(col => {
+                        const checkedAttr = (currentVal === col) ? 'checked' : '';
+                        html += `<td class="p-2 text-center"><input type="radio" name="matrix_${i}" value="${escapeHtml(col)}" ${checkedAttr} class="w-4 h-4 text-emerald-600 focus:ring-emerald-400"></td>`;
+                    });
+                    html += `</tr>`;
+                }
+                html += `</tbody></table></div><p class="text-xs text-gray-500 mt-2"><i class="fas fa-hand-pointer"></i> Har bir qator uchun bitta javob tanlang</p>`;
+            }
+            else if (q.type === "textarea") {
+                const val = answers[q.id] || "";
+                html += `<div class="mt-4"><textarea id="textarea_${q.id}" rows="5" class="w-full border border-gray-300 rounded-xl p-4 focus:ring-emerald-500 focus:border-emerald-500 shadow-sm" placeholder="${escapeHtml(q.placeholder)}">${escapeHtml(val)}</textarea>
+                        <div class="text-right text-xs text-gray-400 mt-1"><i class="far fa-comment-dots"></i> Sizning fikringiz muhim</div></div>`;
+            }
+            
+            html += `</div>`;
+            surveyContainer.innerHTML = html;
+            
+            // Attach event listeners
+            if (q.type === "checkbox" && q.maxSelect) {
+                const checkboxes = document.querySelectorAll(`input[name="q_${q.id}"]`);
+                const limit = q.maxSelect;
+                const limitHandler = function(e) {
+                    const checkedNow = document.querySelectorAll(`input[name="q_${q.id}"]:checked`);
+                    if (checkedNow.length > limit) {
+                        this.checked = false;
+                        showToast(`Siz eng ko'pi bilan ${limit} ta variant tanlashingiz mumkin`, "error");
+                    } else {
+                        captureCurrentAnswers();
+                    }
+                };
+                checkboxes.forEach(cb => {
+                    cb.removeEventListener('change', limitHandler);
+                    cb.addEventListener('change', limitHandler);
+                });
+            }
+            
+            if (q.type === "radio") {
+                document.querySelectorAll(`input[name="q_${q.id}"]`).forEach(radio => {
+                    radio.addEventListener('change', () => {
+                        captureCurrentAnswers();
+                        document.querySelectorAll(`.radio-check-icon`).forEach(icon => icon.classList.remove('opacity-100'));
+                        if (radio.checked) radio.closest('label')?.querySelector('.radio-check-icon')?.classList.add('opacity-100');
+                    });
+                });
+            }
+            if (q.type === "checkbox") {
+                document.querySelectorAll(`input[name="q_${q.id}"]`).forEach(cb => cb.addEventListener('change', () => captureCurrentAnswers()));
+            }
+            if (q.type === "textarea") {
+                const ta = document.getElementById(`textarea_${q.id}`);
+                if (ta) ta.addEventListener('input', () => captureCurrentAnswers());
+            }
+            if (q.type === "matrix") {
+                for (let i = 0; i < q.rows.length; i++) {
+                    document.querySelectorAll(`input[name="matrix_${i}"]`).forEach(radio => radio.addEventListener('change', () => captureCurrentAnswers()));
+                }
+            }
+        }
+        
+        // Navigation
+        function nextStep() {
+            if (!validateCurrent()) return;
+            captureCurrentAnswers();
+            if (currentIndex === totalQuestions - 1) {
+                submitFinalForm();
+                return;
+            }
+            if (currentIndex < totalQuestions - 1) {
+                currentIndex++;
+                renderQuestion();
+                updateProgressUI();
+            }
+        }
+        
+        function prevStep() {
+            if (currentIndex > 0) {
+                captureCurrentAnswers();
+                currentIndex--;
+                renderQuestion();
+                updateProgressUI();
+            }
+        }
+        
+        // Prepare flattened payload for Google Sheets
+        function preparePayload() {
+            return {
+                submissionDate: new Date().toISOString(),
+                age: answers.age,
+                district: answers.district,
+                visitFrequency: answers.visitFrequency,
+                purpose: answers.purpose.join(", "),
+                distance: answers.distance,
+                targetGroups: answers.targetGroups.join(", "),
+                walkwaysRating: answers.walkways,
+                toiletsRating: answers.toilets,
+                infrastructureLighting: answers.infrastructure.lighting,
+                infrastructureSanitary: answers.infrastructure.sanitary,
+                infrastructurePlayground: answers.infrastructure.playground,
+                infrastructureSports: answers.infrastructure.sports,
+                infrastructureCafe: answers.infrastructure.cafe,
+                infrastructureTrash: answers.infrastructure.trash,
+                shadeRating: answers.shade,
+                cleanlinessRating: answers.cleanliness,
+                missingFacilities: answers.missingFacilities.join(", "),
+                nationalTraditions: answers.nationalTraditions,
+                optimalDistance: answers.optimalDistance,
+                futurePriorities: answers.futurePriority.join(", "),
+                suggestion: answers.suggestion
+            };
+        }
+        
+        // Submit to Google Apps Script
+        async function submitFinalForm() {
+            captureCurrentAnswers();
+            
+            // Final validation
+            for (let i = 0; i < totalQuestions; i++) {
+                const q = QUESTIONS[i];
+                if (q.required) {
+                    if (q.type === "radio" && !answers[q.id]) { showToast(`Iltimos, "${q.text}" savoliga javob bering`, "error"); currentIndex = i; renderQuestion(); updateProgressUI(); return; }
+                    if (q.type === "checkbox" && (!answers[q.id] || answers[q.id].length === 0)) { showToast(`Iltimos, "${q.text}" savolida kamida bitta variant tanlang`, "error"); currentIndex = i; renderQuestion(); updateProgressUI(); return; }
+                    if (q.type === "matrix") {
+                        const infraVals = answers.infrastructure;
+                        if (!infraVals.lighting || !infraVals.sanitary || !infraVals.playground || !infraVals.sports || !infraVals.cafe || !infraVals.trash) {
+                            showToast(`Iltimos, infratuzilma jadvalini to‘liq baholang`, "error");
+                            currentIndex = i;
+                            renderQuestion();
+                            updateProgressUI();
+                            return;
+                        }
+                    }
+                }
+                if (q.id === "futurePriority" && answers.futurePriority && answers.futurePriority.length > 2) {
+                    showToast("Kelajakdagi ustuvorliklar uchun maksimum 2 ta variant tanlang", "error");
+                    currentIndex = i;
+                    renderQuestion();
+                    updateProgressUI();
+                    return;
+                }
+            }
+            
+            const payload = preparePayload();
+            const btn = nextBtn;
+            const originalHtml = btn.innerHTML;
+            btn.disabled = true;
+            btn.innerHTML = `<i class="fas fa-spinner fa-pulse"></i> Yuborilmoqda...`;
+            
+            try {
+                const response = await fetch(GOOGLE_SCRIPT_URL, {
+    method: "POST",
+    headers: {
+        "Content-Type": "text/plain"
+    },
+    body: JSON.stringify(payload)
+});
+                // With no-cors, we cannot read response, but we assume success if no network error.
+                // For better error handling, you would need to enable CORS in Apps Script (return Access-Control-Allow-Origin)
+                // However, simple no-cors will still send data. We'll show success optimistically.
+                showSuccessScreen();
+            } catch (err) {
+                console.error(err);
+                showToast("Ma'lumotlarni yuborishda xatolik yuz berdi. Iltimos qayta urinib ko'ring.", "error");
+                btn.disabled = false;
+                btn.innerHTML = originalHtml;
+            }
+        }
+        
+        function showSuccessScreen() {
+            surveyContainer.innerHTML = `
+                <div class="flex flex-col items-center justify-center py-8 text-center success-bounce">
+                    <div class="w-28 h-28 bg-emerald-100 rounded-full flex items-center justify-center mb-5 shadow-lg">
+                        <i class="fas fa-check-circle text-5xl text-emerald-600"></i>
+                    </div>
+                    <h2 class="text-3xl font-extrabold text-emerald-800">Rahmat!</h2>
+                    <p class="text-gray-600 mt-3 max-w-sm text-base">So'rovnomada ishtirok etganingiz uchun tashakkur.<br>Javoblaringiz muvaffaqiyatli yuborildi.</p>
+                    <button id="resetSurveyBtn" class="mt-8 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition flex items-center gap-2"><i class="fas fa-redo-alt"></i> Yangi so‘rov</button>
+                </div>
+            `;
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+            document.getElementById("resetSurveyBtn")?.addEventListener("click", () => {
+                answers = {
+                    age: "", district: "", visitFrequency: "", purpose: [], distance: "", targetGroups: [],
+                    walkways: "", toilets: "", infrastructure: { lighting: "", sanitary: "", playground: "", sports: "", cafe: "", trash: "" },
+                    shade: "", cleanliness: "", missingFacilities: [], nationalTraditions: "", optimalDistance: "", futurePriority: [], suggestion: ""
+                };
+                currentIndex = 0;
+                prevBtn.style.display = 'flex';
+                nextBtn.style.display = 'flex';
+                renderQuestion();
+                updateProgressUI();
+            });
+        }
+        
+        function escapeHtml(str) { if(!str) return ""; return str.replace(/[&<>]/g, function(m){ if(m==='&') return '&amp;'; if(m==='<') return '&lt;'; if(m==='>') return '&gt;'; return m;}); }
+        
+        prevBtn.addEventListener("click", prevStep);
+        nextBtn.addEventListener("click", nextStep);
+        
+        renderQuestion();
+        updateProgressUI();
     </script>
-
-
-
-
-
-
-    <script src="./БЮДни юклаб олиш_files/wow.min.js.Без названия"></script>
-
-    <script src="./БЮДни юклаб олиш_files/counterup.min.js.Без названия"></script>
-    <script src="./БЮДни юклаб олиш_files/owl.carousel.min.js.Без названия"></script>
-
-
-    <!-- Contact Form JavaScript File -->
-
-    <!-- Template Main Javascript File -->
-    <script src="./БЮДни юклаб олиш_files/main.js.Без названия"></script>
-
-
-<deepl-input-controller translate="no"><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://cofdbpoegempjloogbagkncekinflcnj/build/content.css"><div dir="ltr" style="visibility: initial !important;"><div class="dl-input-translation-container svelte-95aucy"><div></div></div></div></template></deepl-input-controller></body></html>
+</body>
+</html>
