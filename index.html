@@ -42,7 +42,7 @@
             <div class="inline-flex items-center justify-center bg-emerald-100 p-3 rounded-full mb-3 shadow-sm">
                 <i class="fas fa-tree text-emerald-700 text-2xl"></i>
             </div>
-            <h1 class="text-2xl md:text-3xl font-extrabold text-emerald-800 tracking-tight">Toshkent shahri bog‘-parklari so‘rovnomasi</h1>
+            <h1 class="text-2xl md:text-3xl font-extrabold text-emerald-800 tracking-tight">Toshkent shahri bog‘-parklari va ko‘kalamzor hududlari holati tahlillari aholi so‘rovnomasi.</h1>
             <p class="text-gray-600 mt-2 text-sm md:text-base max-w-lg mx-auto">
                 <i class="fas fa-leaf text-emerald-500 mr-1"></i> Sizning fikringiz shahar yashil hududlarini rivojlantirish uchun muhim
             </p>
@@ -92,22 +92,22 @@
         
         // ----------------------------- QUESTION LIST -----------------------------
         const QUESTIONS = [
-            { id: "age", type: "radio", text: "Yoshingiz qaysi guruhga kiradi?", options: ["15–25 yosh", "26–40 yosh", "41–60 yosh", "61 yosh va undan yuqori"], required: true },
+            { id: "age", type: "radio", text: "Yosh guruhingizni koʻrsating?", options: ["15–25 yosh", "26–40 yosh", "41–60 yosh", "61 yosh va undan yuqori"], required: true },
             { id: "district", type: "radio", text: "Yashash tumaningiz?", options: ["Chilonzor", "Yunusobod", "Mirzo Ulug'bek", "Shayxontohur", "Yakkasaroy", "Uchtepa", "Sergeli", "Olmazor", "Bektemir", "Boshqa"], required: true },
             { id: "visitFrequency", type: "radio", text: "Toshkentdagi bog'-parklarga qanchalik tez-tez borasiz?", options: ["Har kuni", "Haftada 2–3 marta", "Haftada bir marta", "Oyda bir-ikki marta", "Kamdan-kam yoki umuman bormayman"], required: true },
-            { id: "purpose", type: "checkbox", text: "Bog'-parkka borishdan asosiy maqsadingiz nima?", options: ["Piyoda yurish va jismoniy faollik", "Bolalar bilan dam olish", "Tabiatda hordiq chiqarish", "Sport va jismoniy mashq", "Do'stlar bilan muloqot", "Tabiiy muhitni tomosha qilish"], required: true, minSelect: 1 },
-            { id: "distance", type: "radio", text: "Yashash joyingizdan eng yaqin bog'-park qancha masofada?", options: ["500 m gacha", "500 m – 1 km", "1–3 km", "3 km dan uzoqda"], required: true },
-            { id: "targetGroups", type: "checkbox", text: "Bog'-parklar aholining qaysi qatlamiga mo'ljallangan?", options: ["Bolalar", "Yoshlar", "O'smirlar", "Yosh bolali oilalar", "Katta yoshdagi insonlar", "Keksalar"], required: true, minSelect: 1 },
-            { id: "walkways", type: "radio", text: "Bog‘-parklardagi yo‘laklar va piyoda hududlari holati?", options: ["Juda yaxshi", "Yaxshi", "O'rtacha", "Qoniqarsiz", "Juda qoniqarsiz"], required: true },
-            { id: "toilets", type: "radio", text: "Sanitariya tugunlari (hojatxonalar) haqida fikringiz?", options: ["Qulay va toza", "Bor, lekin holati qoniqarsiz", "Juda kam joylashtirilgan", "Umuman yo'q"], required: true },
-            { id: "infrastructure", type: "matrix", text: "Quyidagi infratuzilmalarni baholang (har bir qator uchun)", rows: ["Yoritish tizimi", "Sanitar tugunlar", "Bolalar o'yin maydoni", "Sport maydonchalari", "Kafe", "Chiqindi qutilari"], columns: ["Yaxshi", "O'rtacha", "Qoniqarsiz", "Yo'q"], required: true },
-            { id: "shade", type: "radio", text: "Daraxt va o'simliklar yetarli soya beradimi?", options: ["Ha", "Qisman", "Yo'q", "E'tibor bermaganman"], required: true },
-            { id: "cleanliness", type: "radio", text: "Bog'-parkdagi tozalik holatini baholang", options: ["Doim toza", "Ko'pincha toza", "Tez-tez ifloslangan", "Doimiy muammo"], required: true },
-            { id: "missingFacilities", type: "checkbox", text: "Qaysi xizmatlar va imkoniyatlar yetishmaydi? (bir nechtasini tanlang)", options: ["Zamonaviy o'yin maydonchalari", "Skameykalar va dam olish zonalari", "Yugurish yo'laklari", "Veloyo'llar", "Kafeteryalar", "To'xtab turish joyi", "Wi-Fi zonalari", "Hojatxonalar", "Favvoralar"], required: true, minSelect: 1 },
-            { id: "nationalTraditions", type: "radio", text: "Bog‘-parklarda milliy an’ana va madaniy elementlarning aks etishi siz uchun qanchalik muhim?", options: ["Juda muhim", "Muhim", "Zamonaviy elementlar bilan", "Ahamiyat bermayman"], required: true },
-            { id: "optimalDistance", type: "radio", text: "Siz uchun eng maqbul piyoda borish masofasi qancha?", options: ["300 m", "500 m", "1 km", "Muhimi sifati"], required: true },
-            { id: "futurePriority", type: "checkbox", text: "Kelajakda parklarni rivojlantirishda qaysi ikki yo‘nalish eng muhim? (FAQAT 2 TA TANLANG)", options: ["Ko'proq daraxtlar va yashil hududlar", "Zamonaviy bolalar maydonchalari", "Sport inshootlari va maydonchalar", "Yoritish tizimini yaxshilash", "Chiqindi tizimi va tozalik", "Kafe va dam olish hududlari"], required: true, minSelect: 1, maxSelect: 2 },
-            { id: "suggestion", type: "textarea", text: "Taklif va mulohazalaringiz (ixtiyoriy)", placeholder: "Bog‘-parklarni yaxshilash bo‘yicha fikrlaringizni yozing...", required: false }
+            { id: "purpose", type: "checkbox", text: "Bog‘-parklarga borishdan asosiy maqsadingiz nima?", options: ["Piyoda yurish va jismoniy faollik", "Bolalar bilan dam olish", "Tabiatda hordiq chiqarish, ruhiy tinchlik", "Sport va jismoniy mashq", "Do'stlar, oila bilan muloqot", "Tabiiy muhitni tomosha qilish"], required: true, minSelect: 1 },
+            { id: "distance", type: "radio", text: "Yashash joyingizdan eng yaqin bog‘-park, ko‘kalamzor hududlar qancha masofada joylashgan?", options: ["500 m gacha (piyoda 5–7 daqiqa)", "500 m – 1 km", "1–3 km", "3 km dan uzoqda"], required: true },
+            { id: "targetGroups", type: "checkbox", text: "Yashash hududingizga eng yaqin bog‘-parklar va ko‘kalamzor hududlar aholining qaysi qatlamiga mo‘ljallangan?", options: ["Bolalar", "Yoshlar", "O'smirlar", "Yosh bolali oilalar", "Katta yoshdagi insonlar", "Keksalar"], required: true, minSelect: 1 },
+            { id: "walkways", type: "radio", text: "Bog'-parklarda umumiy yurish yo'laklari va piyodalar yurish yo'laklarini qanday baholaysiz?", options: ["Juda yaxshi", "Yaxshi", "O'rtacha", "Qoniqarsiz", "Juda qoniqarsiz"], required: true },
+            { id: "toilets", type: "radio", text: "Bog'-parkdagi sanitariya tugunlari (hojatxonalar) holati va joylashuvini baholang:", options: ["Qulay va toza", "Bor, lekin holati qoniqarsiz", "Juda kam joylashtirilgan", "Umuman yo'q"], required: true },
+            { id: "infrastructure", type: "matrix", text: "Quyidagi infratuzilma elementlarining mavjudligi va holatini baholang:", rows: ["O‘rindiqlar soni va holati", "Yoritish tizimi (kechqurun)", "Bolalar o'yin maydoni", "Sanitar tugunlar (qo’l yuvish joylari)", "Sport maydonchalari", "Kafe / ovqatlanish joylari", "Chiqindi qutilari"], columns: ["Yaxshi", "O'rtacha", "Qoniqarsiz", "Yo'q"], required: true },
+            { id: "shade", type: "radio", text: "Yangi tashkil etilayotgan bog'-parklardagi daraxt va o'simliklar yetarli soya beradi deb hisoblaysizmi?", options: ["Ha, yetarli soya bor", "Qisman, ba'zi joylarda soya yetishmaydi", "Yo'q, yozda soya juda kam", "Bunga e'tibor bermagan edim"], required: true },
+            { id: "cleanliness", type: "radio", text: "Bog'-parkdagi tozalik holatini baholang:", options: ["Doim toza va tartibli", "Ko'pincha toza", "Tez-tez ifloslangan bo'ladi", "Doimiy muammo"], required: true },
+            { id: "missingFacilities", type: "checkbox", text: "Bog'-parklarda qaysi xizmatlar va imkoniyatlar yetishmaydi, deb hisoblaysiz?", options: ["Kattalar uchun sport jihozlari", "Keksalar uchun maxsus tinch hordiq zonasi", "Nogironlar va imkoniyati cheklangan shaxslar uchun sharoit", "Velosiped yo'laklari", "Wi-Fi va mobil qurilmalar uchun zaryad nuqtalari", "Ko'proq yashil o'simliklar va gulzorlar", "Suv elementlari (fontanlar, dekorativ hovuzlar)", "Madaniy tadbir va ochiq sahnalar", "Kutubxona yoki o'qish burchagi"], required: true, minSelect: 1 },
+            { id: "nationalTraditions", type: "radio", text: "Bog'-parklarda o'zbek milliy bog'-park an'analari (ariq, chaman, gulshanlar) saqlanishiga qanchalik ahamiyat berasiz?", options: ["Juda muhim, albatta saqlansin", "Muhim", "Zamonaviy elementlar bilan birga bo'lsa yaxshi", "Ahamiyat bermayman"], required: true },
+            { id: "optimalDistance", type: "radio", text: "Bog'-parklarga har kuni piyoda yetib borish uchun eng maqbul masofa qancha bo'lishi kerak deb hisoblaysiz?", options: ["300 m gacha", "500 m gacha", "1 km gacha", "Masofaning ahamiyati yo'q, muhimi sifati"], required: true },
+            { id: "futurePriority", type: "checkbox", text: "Kelajakda bog'-parklar va ko'kalamzor hududlarni rivojlantirish uchun qaysi yo'nalish ustuvor bo'lishi kerak?", options: ["Yangi bog'-parklar qurish", "Mavjud bog'-parklarni ta'mirlash va yaxshilash", "Har bir mahallada kichik ko'kalamzor maydonlar yaratish", "Piyoda va velosiped yo'laklarini bog'-parklar bilan ulash", "Bog'-parklarning ekologik sifatini (havo, soya, suvni) yaxshilash"], required: true, minSelect: 2, maxSelect: 2 },
+            { id: "suggestion", type: "textarea", text: "Toshkentning bog'-parklari va ko'kalamzor hududlarini takomillashtirish bo'yicha eng muhim taklifingizni yozing:", placeholder: "Fikr va takliflaringizni yozing...", required: false }
         ];
 
         // ---------- GLOBAL STATE ----------
@@ -274,7 +274,7 @@
                 const infra = answers.infrastructure;
                 const keyMap = ["lighting", "sanitary", "playground", "sports", "cafe", "trash"];
                 html += `<div class="overflow-x-auto mt-4 rounded-xl border border-gray-200"><table class="matrix-table min-w-full bg-white text-sm">`;
-                html += `<thead class="bg-gray-100"><tr><th class="p-2 text-left font-semibold">Infratuzilma</th>`;
+                html += `<thead class="bg-gray-100"><tr><th class="p-2 text-left font-semibold">Element</th>`;
                 cols.forEach(col => html += `<th class="p-2 text-center font-semibold">${escapeHtml(col)}</th>`);
                 html += `</tr></thead><tbody>`;
                 for (let i = 0; i < rows.length; i++) {
